@@ -4,7 +4,8 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from handlers import other_handlers, choice_author, user_handlers
+
+from handlers import other_handlers, choice_author, user_handlers, admin
 from keyboards.main_menu import set_main_menu
 
 from config_reader import config
@@ -18,11 +19,9 @@ async def main():
               default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     await set_main_menu(bot)
-    dp.include_routers(user_handlers.router, choice_author.router, other_handlers.router)
+    dp.include_routers(user_handlers.router, choice_author.router, admin.router, other_handlers.router)
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
-asyncio.run(main())
-
-
-
+if __name__ == '__main__':
+    asyncio.run(main())

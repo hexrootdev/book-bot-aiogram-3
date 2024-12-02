@@ -23,7 +23,10 @@ LEXICON: dict[str, str] = {
                     'добавить страницу в закладки - во время чтения '
                     'книги нажмите на кнопку с номером этой '
                     'страницы\n\n/continue - продолжить чтение',
-    'cancel_text': '/continue - продолжить чтение'
+    'cancel_text': '/continue - продолжить чтение',
+    'admin_panel': '<b>Здравствуй!\n\nВыбери действие снизу.</b>',
+    'enter_name': '<b>👀Напишите короткое название для книги и callback к ней\nФормат: <em>имя_callback</em></b>',
+    'send_book_file': '<b>🛜Отлично!\n\nТеперь отправьте <em>.txt файл</em> с текстом книги.</b>'
 }
 
 LEXICON_COMMANDS: dict[str, str] = {
