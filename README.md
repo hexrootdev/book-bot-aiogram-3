@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
-Бот-читалка любых .txt файлов (в т.ч. и больших текстов) с пагинацией
+Бот-читалка любых .txt файлов (в т.ч. и больших текстов) с пагинацией (pet-project)
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Aiogram](https://img.shields.io/badge/-Aiogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
